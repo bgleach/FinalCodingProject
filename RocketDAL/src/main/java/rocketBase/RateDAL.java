@@ -30,7 +30,7 @@ public class RateDAL {
 			//			example can be found here:
 			//  		http://www.tutorialspoint.com/hibernate/hibernate_query_language.htm		
 			String hql = "FROM TBLRATE ORDER BY Rates DESC";
-			Query query = session.createQuery("Rates");
+			Query query = session.createQuery("Rate");
 			List results = query.list();
 			
 			List lstRates = session.createQuery("FROM RateDomainModel").list();
