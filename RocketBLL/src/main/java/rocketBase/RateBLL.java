@@ -9,7 +9,7 @@ import rocketDomain.RateDomainModel;
 
 public class RateBLL {
 
-	private static RateDAL _RateDAL = new RateDAL();
+	private static RateDAL RateDAL = new RateDAL();
 	private static double interestRate;
 	
 	public static double getRate(int GivenCreditScore) throws RateException 
